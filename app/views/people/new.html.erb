@@ -2,20 +2,20 @@
   <%= f.text_field :name %> <br /><br />
 
   <%= f.fields_for :addresses do |addr| %>
-    <%= %>
-    <%= %>
+    <%= addr.label :street_address_1 %>
+    <%= addr.text_field :street_address_1 %><br>
 
     <%= %>
-    <%= %>
+    <%= %><br>
 
     <%= %>
-    <%= %>
+    <%= %><br>
 
     <%= %>
-    <%= %>
+    <%= %><br>
 
     <%= %>
-    <%= %>
+    <%= %><br>
   <% end %>
  <%= f.submit %>
 <% end %>
